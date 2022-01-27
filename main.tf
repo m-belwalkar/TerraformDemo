@@ -18,7 +18,7 @@ resource "azurerm_resource_group" "rg" {
   name      = var.resource_group_name
   location  = var.resource_group_location
 }
-
+/*
 resource "azurerm_virtual_network" "example" {
   name                = "cdcpoc-vnet"
   address_space       = ["10.7.29.0/29"]
@@ -48,3 +48,4 @@ resource "azurerm_storage_container" "rgname" {
   storage_account_name  = azurerm_storage_account.rgname.name
   container_access_type = "container"
 }
+*/

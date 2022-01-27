@@ -35,7 +35,7 @@ resource "azurerm_subnet" "example" {
 }
 
 resource "azurerm_storage_account" "rgname" {
-  name                     = "cdcbackinginfrastorageaccount"
+  name                     = "cdcbckginfrastorageacc"
   resource_group_name      = var.resource_group_name
   location                 = var.resource_group_location
   account_tier             = "Standard"

@@ -33,7 +33,7 @@ resource "azurerm_subnet" "example" {
   address_prefixes     = ["10.7.29.0/29"]
   service_endpoints    = ["Microsoft.Sql"]
 }
-/*
+
 resource "azurerm_storage_account" "rgname" {
   name                     = "cdcbckginfrastorageacc"
   resource_group_name      = var.resource_group_name
@@ -48,4 +48,3 @@ resource "azurerm_storage_container" "rgname" {
   storage_account_name  = azurerm_storage_account.rgname.name
   container_access_type = "container"
 }
-*/

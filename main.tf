@@ -18,7 +18,7 @@ resource "azurerm_resource_group" "rg" {
   name      = var.resource_group_name
   location  = var.resource_group_location
 }
-
+/*
 resource "azurerm_virtual_network" "example" {
   name                = "cdcpoc-vnet"
   address_space       = ["10.7.29.0/29"]
@@ -160,11 +160,11 @@ resource "azurerm_eventhub_consumer_group" "rgname" {
   resource_group_name = var.resource_group_name
   user_metadata       = "cdcpoc"
 }
-/*
+
 data "azuread_service_principal" "cosmosdb" {
   display_name = "Azure Cosmos DB"
 }
-*/
+
 data "azurerm_client_config" "current" {}
 
 resource "azurerm_key_vault" "example" {
@@ -234,3 +234,4 @@ resource "azurerm_cosmosdb_account" "example" {
     failover_priority = 0
   }
 }
+*/

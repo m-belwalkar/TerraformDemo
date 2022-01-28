@@ -191,8 +191,8 @@ resource "azurerm_key_vault" "example" {
   }
 
   access_policy {
-    tenant_id = data.azurerm_client_config.current.tenant_id
-    object_id = data.azuread_service_principal.cosmosdb.id
+    tenant_id = "4adae17a-ae8f-4ebe-b9b9-730105aa1002"
+    object_id = "82fef68d-861f-42a8-80e6-3ae6fbac2e65"
 
     key_permissions = [
       "get",

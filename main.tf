@@ -160,11 +160,11 @@ resource "azurerm_eventhub_consumer_group" "rgname" {
   resource_group_name = var.resource_group_name
   user_metadata       = "cdcpoc"
 }
-
+/*
 data "azuread_service_principal" "cosmosdb" {
   display_name = "Azure Cosmos DB"
 }
-
+*/
 data "azurerm_client_config" "current" {}
 
 resource "azurerm_key_vault" "example" {
@@ -177,8 +177,8 @@ resource "azurerm_key_vault" "example" {
   purge_protection_enabled = true
 
   access_policy {
-    tenant_id = data.azurerm_client_config.current.tenant_id
-    object_id = data.azurerm_client_config.current.object_id
+    tenant_id = "4adae17a-ae8f-4ebe-b9b9-730105aa1002"
+    object_id = "82fef68d-861f-42a8-80e6-3ae6fbac2e65"
 
     key_permissions = [
       "list",

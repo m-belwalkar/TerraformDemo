@@ -162,7 +162,7 @@ resource "azurerm_eventhub_consumer_group" "rgname" {
 }
 
 resource "azurerm_key_vault" "example" {
-  name                = "cdcdemokv"
+  name                = "cdcdemokvt"
   location            = var.resource_group_location
   resource_group_name = var.resource_group_name
   tenant_id           = "4adae17a-ae8f-4ebe-b9b9-730105aa1002"
